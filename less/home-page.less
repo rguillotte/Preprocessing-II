@@ -94,6 +94,11 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     @media @mobile {
       flex-wrap: wrap;
       justify-content: center;
@@ -102,6 +107,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 80%;
+      }
 
       @media @mobile {
         width: 80%;
